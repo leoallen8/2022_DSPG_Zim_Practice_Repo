@@ -14,3 +14,12 @@ DSM_HARV <- raster("data/HARV_dsmCrop.tif")
 summary(DSM_HARV)
 ```
 
+```{r}
+#Ari
+
+DSM_HARV_df <- as.data.frame(DSM_HARV, xy=TRUE)
+ggplot() +
+  geom_raster(data=DSM_HARV_df, aes(x=x,y=y, fill=HARV_dsmCrop)) +
+  #scale_fill_viridis_c() +
+  coord_quickmap()
+```
