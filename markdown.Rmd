@@ -15,6 +15,7 @@ summary(DSM_HARV)
 ```
 
 ```{r}
+
 #Ari
 
 DSM_HARV_df <- as.data.frame(DSM_HARV, xy=TRUE)
@@ -23,3 +24,13 @@ ggplot() +
   #scale_fill_viridis_c() +
   coord_quickmap()
 ```
+
+
+```{r}
+#Josue
+library(ggplot2)
+library(gapminder)
+ggplot(data=gapminder, aes(x=lifeExp)) +
+  geom_histogram() + theme_classic()
+```
+
