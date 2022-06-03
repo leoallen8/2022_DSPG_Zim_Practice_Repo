@@ -14,3 +14,11 @@ DSM_HARV <- raster("data/HARV_dsmCrop.tif")
 summary(DSM_HARV)
 ```
 
+```{r}
+#Josue
+library(ggplot2)
+library(gapminder)
+ggplot(data=gapminder, aes(x=lifeExp)) +
+  geom_histogram() + theme_classic()
+```
+
