@@ -17,7 +17,7 @@ summary(DSM_HARV)
 ```{r}
 
 #Ari
-
+library(ggplot2)
 DSM_HARV_df <- as.data.frame(DSM_HARV, xy=TRUE)
 ggplot() +
   geom_raster(data=DSM_HARV_df, aes(x=x,y=y, fill=HARV_dsmCrop)) +
@@ -28,7 +28,6 @@ ggplot() +
 
 ```{r}
 #Josue
-library(ggplot2)
 library(gapminder)
 ggplot(data=gapminder, aes(x=lifeExp)) +
   geom_histogram() + theme_classic()
