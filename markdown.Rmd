@@ -28,7 +28,6 @@ ggplot() +
 
 ```{r}
 #Josue
-library(ggplot2)
 library(gapminder)
 ggplot(data=gapminder, aes(x=lifeExp)) +
   geom_histogram() + theme_classic()
